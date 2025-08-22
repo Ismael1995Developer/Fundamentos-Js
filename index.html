@@ -7,129 +7,132 @@
     <script type="module" crossorigin src="/Fundamentos-Js/assets/index-RTF8fA-W.js"></script>
     <link rel="stylesheet" crossorigin href="/Fundamentos-Js/assets/index-HXDv6tAA.css">
   </head>
-  <body>
+  <body class="d-flex flex-column nin-vh-100">
     <header class="container-fluid text-center bg-secondary bg-gradient">
       <h1 class="row justify-content-center p-2 text-light">Fundamentos Js</h1>
     </header>
-    <main class="container">
-      <section class="d-flex flex-column text-center mt-5">
-        <div class="d-flex flex-column mb-2">
-          <h2 class="m-4">Calculadora de idade</h2>
-          <p class="m-2">
+    <main class="container text-center">
+      <section class="container text-center mt-5 border-2 py-5">
+          <h2 class="pt-2 pb-3">Calculadora de idade</h2>
+          <p class="pt-4 pb-3">
             Descubra se é maior de idade ou menor de idade com a sua data de
             nascimento!
           </p>
         </div>
-        <form class="d-flex flex-column justify-content-center needs-validation" novalidate>
-          <div class="d-flex mb-3">
-            <input class="form-control limpavel" type="text" disabled id="display" />
+        <form class="row g-3 justify-content-center needs-validation gap-2" novalidate>
+          <div class="col-12 col-md-6 mb-3">
+              <input class="form-control limpavel" type="text" disabled id="display" />
           </div>
-          <div class="d-flex mb-3">
+          <div class="col-12 col-md-6 mb-3">
             <input class="form-control text-center limpavel" type="date" id="inputDate" />
           </div>
-          <div class="d-flex justify-content-center mt-4">
+        </form>
+          <div class="d-flex flex-wrap justify-content-center mt-4 gap-2">
             <button
               type="button"
-              class="btn btn-danger col-2 m-2 text-uppercase" id="validar">
+              class="btn btn-danger col-12 col-md-2 text-uppercase" id="validar">
               Validar
             </button>
             <button
               type="button"
-              class="btn btn-danger col-2 m-2 text-uppercase limpar">
+              class="btn btn-danger col-12 col-12 col-md-2 text-uppercase limpar">
               Limpar
             </button>
           </div>
-        </form>
       </section>
-      <hr />
-      <section class="d-flex flex-column text-center mt-5">
-        <h2>Sistema de Conversão de Unidades de Temperatura</h2>
-        <p>Descubra a temperatura em Faherenheit e Celsius</p>
-        <form class="d-flex flex-column justify-content-center mt-4 needs-validation" novalidate>
-          <div class="row g-3">
-            <div class="input-group col">
-              <span class="input-group-text">Faherenheit</span>
-              <input type="number" class="form-control invalid-feedbcak limpavel" id="inputFah"/>
-            </div>
-            <div class="input-group col">
-              <span class="input-group-text">Celsius</span>
-              <input type="number" class="form-control invalid-feedbcak limpavel" id="inputCel"/>
+      <section class="container text-center mt-5 border-top border-2 py-5">
+        <h2 class="mb-4">Sistema de Conversão de Unidades de Temperatura</h2>
+        <p class="mb-4">Descubra a temperatura em Faherenheit e Celsius</p>
+        <form class="row g-3 justify-content-center needs-validation" novalidate>
+          <div class="col-md-3 col-12">
+            <div class="input-group">
+              <span class="input-group-text">Fahrenheit</span>
+              <input type="number" class="form-control limpavel" id="inputFah"/>
             </div>
           </div>
-          <div class="d-flex justify-content-center mt-4">
+          <div class="col-md-3 col-12">
+            <div class="input-group">
+              <span class="input-group-text">Celsius</span>
+              <input type="number" class="form-control limpavel" id="inputCel"/>
+            </div>
+          </div>
+        </form>        
+          <div class="d-flex flex-wrap justify-content-center mt-4 gap-2">
             <button
               type="button"
-              class="btn btn-danger col-2 m-2 text-uppercase" id="btnConv">
+              class="btn btn-danger col-12 col-md-2 text-uppercase" id="btnConv">
               Converter
             </button>
             <button
               type="button"
-              class="btn btn-danger col-2 m-2 text-uppercase limpar">
+              class="btn btn-danger col-12 col-md-2 text-uppercase limpar">
               Limpar
             </button>
           </div>
-        </form>
       </section>
-      <hr />
-      <section class="d-flex flex-column text-center mt-5">
-        <h2 id="aprovar">Media de Notas</h2>
-        <p>Descubra a Media das suas notas do Trimestre!</p>
-        <div class="mb-4">
+      <section class="container text-center mt-5 py-5 border-2 border-top">
+        <h2 id="aprovar" class="mb-3">Media de Notas</h2>
+        <p class="pb-3">Descubra a Media das suas notas do Trimestre!</p>
+        <div class="pb-4">
           <input type="text" class="col-8 text-center limpavel" disabled id="displayMed"/>
         </div>
-        <form action="" class="d-inline-flex justify-content-evenly input-group mb-2 needs-validation" novalidate>
-          <div class="row g-3">
-            <div class="input-group col">
-              <span class="input-group-text">1° Nota</span>
-              <input type="number" class="col-1 form-control limpavel" id="inputNot1"/>
+        <form class="row g-4 justify-content-center mb-2 needs-validation" novalidate>
+            <div class="col-12 col-md-2">
+              <div class="input-group">
+                <span class="input-group-text">1° Nota</span>
+              <input type="number" class="form-control limpavel" id="inputNot1"/>
+              </div>
             </div>
-            <div class="input-group col">
-              <span class="input-group-text">2° Nota</span>
-              <input type="number" class="col-1 form-control limpavel" id="inputNot2"/>
+            <div class="col-12 col-md-2">
+              <div class="input-group">
+                <span class="input-group-text">2° Nota</span>
+              <input type="number" class="form-control limpavel" id="inputNot2"/>
+              </div>
             </div>
-            <div class="input-group col">
-              <span class="input-group-text">3° Nota</span>
-              <input type="number" class="col-1 form-control limpavel" id="inputNot3"/>
+            <div class="col-12 col-md-2">
+              <div class="input-group">
+                <span class="input-group-text">3° Nota</span>
+              <input type="number" class="form-control limpavel" id="inputNot3"/>
+              </div>
             </div>
-          </div>
         </form>
-        <div class="d-flex justify-content-center mt-4">
-          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase" id="btnCal">
+        <div class="d-flex flex-wrap justify-content-center mt-4 gap-2">
+          <button type="button" class="btn btn-danger col-12 col-md-2 text-uppercase" id="btnCal">
             Calcular
           </button>
-          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase limpar" id="btnReset">
+          <button type="button" class="btn btn-danger col-12 col-md-2 text-uppercase limpar" id="btnReset">
             Limpar
           </button>
         </div>
       </section>
-      <hr />
-      <section class="d-flex flex-column text-center mt-5">
-        <div class="d-flex flex-column mb-3">
-          <h2 class="m-4">Contador de Palavras</h2>
-          <p>
+      <section class="container text-center mt-5 py-5 border-top border-2">
+          <h2 class="mb-4">Contador de Palavras</h2>
+          <p class="mb-3">
             Use o contador de palavras para saber quantas palavras tem seu texto
           </p>
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-md-2 mt-4">
+            <input type="text" class="form-control text-center limpavel" disabled id="inputResult" />
+          </div>
         </div>
-        <div class="d-flex text-center">
-          <input type="text" class="form-control text-center limpavel" disabled id="inputResult" />
-        </div>
-        <div class="d-flex flex-column mt-4">
-           <h3 class="text-start mb-3">Escrever o Texto</h3> 
+        <div class="row justify-content-center mb-4">
+          <div class="col-12 col-md-8">
+            <h3 class="text-center mb-3 mt-4">Escrever o Texto</h3> 
           <textarea class="w-100 limpavel" rows="6" name="texto" id="textComplet"></textarea>
+          </div>
         </div>
-        <div class="d-flex justify-content-center mt-4">
-          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase" id="btnContar">
+        <div class="d-flex flex-wrap justify-content-center mt-4 gap-2">
+          <button type="button" class="btn btn-danger col-12 col-md-2 text-uppercase" id="btnContar">
             Contar
           </button>
-          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase limpar">
+          <button type="button" class="btn btn-danger col-12 col-md-2 text-uppercase limpar">
             Limpar
           </button>
         </div>
       </section>
-      <hr />
     </main>
     <footer
-      class="position-absolute container-fluid text-center bg-secondary bg-gradient">
+      class="mt-auto container-fluid text-center bg-secondary bg-gradient">
       <h3 class="row justify-content-center text-light p-2">
         José ismael correia @Dev Front-end
       </h3>
