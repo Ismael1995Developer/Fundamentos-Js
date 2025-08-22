@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 
 export default {
+  base: '/Fundamentos-Js/',
   root: resolve(__dirname, 'src'),
   build: {
     outDir: '../dist'

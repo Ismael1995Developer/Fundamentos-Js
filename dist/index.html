@@ -1,15 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projeto Fundamentos Js</title>
-    <script type="module" crossorigin src="/assets/index-ByO9BRGC.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BTaXqxlN.css">
+    <script type="module" crossorigin src="/assets/index-RTF8fA-W.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-HXDv6tAA.css">
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Fundamentos Js</h1>
-    </div>
+    <header class="container-fluid text-center bg-secondary bg-gradient">
+      <h1 class="row justify-content-center p-2 text-light">Fundamentos Js</h1>
+    </header>
+    <main class="container">
+      <section class="d-flex flex-column text-center mt-5">
+        <div class="d-flex flex-column mb-2">
+          <h2 class="m-4">Calculadora de idade</h2>
+          <p class="m-2">
+            Descubra se é maior de idade ou menor de idade com a sua data de
+            nascimento!
+          </p>
+        </div>
+        <form class="d-flex flex-column justify-content-center needs-validation" novalidate>
+          <div class="d-flex mb-3">
+            <input class="form-control limpavel" type="text" disabled id="display" />
+          </div>
+          <div class="d-flex mb-3">
+            <input class="form-control text-center limpavel" type="date" id="inputDate" />
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button
+              type="button"
+              class="btn btn-danger col-2 m-2 text-uppercase" id="validar">
+              Validar
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger col-2 m-2 text-uppercase limpar">
+              Limpar
+            </button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section class="d-flex flex-column text-center mt-5">
+        <h2>Sistema de Conversão de Unidades de Temperatura</h2>
+        <p>Descubra a temperatura em Faherenheit e Celsius</p>
+        <form class="d-flex flex-column justify-content-center mt-4 needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="input-group col">
+              <span class="input-group-text">Faherenheit</span>
+              <input type="number" class="form-control invalid-feedbcak limpavel" id="inputFah"/>
+            </div>
+            <div class="input-group col">
+              <span class="input-group-text">Celsius</span>
+              <input type="number" class="form-control invalid-feedbcak limpavel" id="inputCel"/>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button
+              type="button"
+              class="btn btn-danger col-2 m-2 text-uppercase" id="btnConv">
+              Converter
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger col-2 m-2 text-uppercase limpar">
+              Limpar
+            </button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section class="d-flex flex-column text-center mt-5">
+        <h2 id="aprovar">Media de Notas</h2>
+        <p>Descubra a Media das suas notas do Trimestre!</p>
+        <div class="mb-4">
+          <input type="text" class="col-8 text-center limpavel" disabled id="displayMed"/>
+        </div>
+        <form action="" class="d-inline-flex justify-content-evenly input-group mb-2 needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="input-group col">
+              <span class="input-group-text">1° Nota</span>
+              <input type="number" class="col-1 form-control limpavel" id="inputNot1"/>
+            </div>
+            <div class="input-group col">
+              <span class="input-group-text">2° Nota</span>
+              <input type="number" class="col-1 form-control limpavel" id="inputNot2"/>
+            </div>
+            <div class="input-group col">
+              <span class="input-group-text">3° Nota</span>
+              <input type="number" class="col-1 form-control limpavel" id="inputNot3"/>
+            </div>
+          </div>
+        </form>
+        <div class="d-flex justify-content-center mt-4">
+          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase" id="btnCal">
+            Calcular
+          </button>
+          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase limpar" id="btnReset">
+            Limpar
+          </button>
+        </div>
+      </section>
+      <hr />
+      <section class="d-flex flex-column text-center mt-5">
+        <div class="d-flex flex-column mb-3">
+          <h2 class="m-4">Contador de Palavras</h2>
+          <p>
+            Use o contador de palavras para saber quantas palavras tem seu texto
+          </p>
+        </div>
+        <div class="d-flex text-center">
+          <input type="text" class="form-control text-center limpavel" disabled id="inputResult" />
+        </div>
+        <div class="d-flex flex-column mt-4">
+           <h3 class="text-start mb-3">Escrever o Texto</h3> 
+          <textarea class="w-100 limpavel" rows="6" name="texto" id="textComplet"></textarea>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase" id="btnContar">
+            Contar
+          </button>
+          <button type="button" class="btn btn-danger col-2 m-2 text-uppercase limpar">
+            Limpar
+          </button>
+        </div>
+      </section>
+      <hr />
+    </main>
+    <footer
+      class="position-absolute container-fluid text-center bg-secondary bg-gradient">
+      <h3 class="row justify-content-center text-light p-2">
+        José ismael correia @Dev Front-end
+      </h3>
+    </footer>
   </body>
 </html>
